@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+    .general {
+        background-color: rgb(243, 233, 231);
+        font-family: cursive;
+    }
+
+    .box {
+
+        background-color: rgb(252, 202, 165);
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        vertical-align: top;
+        border: 3px solid rgb(189, 189, 153);
+
+    }
+
+    .header {
+        color: rgb(0, 167, 199);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 60px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: rgb(155, 207, 224);
+    }
+
+    .gridView {
+        text-align: center;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        width: 75%;
+        max-width: 75%;
+        padding: 10px;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    .gridBox {
+        text-align: center;
+
+    }
+
+    .gridImage {
+        width: 250px;
+        height: 250px;
+        opacity: 0.7;
+        border-radius: 15px;
+
+    }
+
+    #aboutMe {
+        position: relative;
+        background: rgb(48, 46, 46);
+        height: 50%;
+        color: white;
+        font-family: monospace;
+        font-size: medium;
+
+    }
+
+    .myLinks {
+        color: white;
+        font-family: monospace;
+        text-decoration: none;
+        padding: 20px;
+
+    }
+</style>
+
+<body class="general">
+    <div class="box">
+        <p>
+        <h1 class="header">Learny</h1>
+        <h2 style="font-family: sans-serif;">Little bits of information from technologies </h2>
+        </p>
+    </div>
+    <ul>
+        <!-- can also add home icon here-->
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="phtyon.html">Pyhton</a></li>
+        <li><a href="algorithm.html">Algorithm</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="se.html">Software Methodologies</a></li>
+        <li><a href="flutter.html">Flutter</a></li>
+        <li><a href="interesting.html">Interesting Facts</a></li>
+    </ul>
+    <div>
+        <h1 style="padding-left: 200px; padding-top: 50px;">What's new?</h1>
+        <div class="gridView">
+            <div class="gridBox"> <img src="se.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="interesting.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="flutter.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="interesting.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="database.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="algo.png" class="gridImage"></div>
+            <div class="gridBox"> <img src="phyton.png" class="gridImage"></div>
+
+        </div>
+    </div>
+    <div id="aboutMe">
+        <div style="align-content: flex-start;">Ece Havancı</div>
+        <div style="align-content:space-between;">
+            <h1 style="padding:15px">Contact Addresses</h1>
+            <a href="mailto:ecehavanci@gmail.com" class="myLinks">Mail</a>
+            <a href="https://github.com/ecehavanci" class="myLinks">Github</a>
+            <a href="https://github.com/ecehavanci" class="myLinks">Gitlab</a>
+            <a href="https://www.linkedin.com/in/ecehavanci/" class="myLinks">Linkedin</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
